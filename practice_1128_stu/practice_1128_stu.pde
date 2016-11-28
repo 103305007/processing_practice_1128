@@ -30,10 +30,10 @@ void draw() {
   fill(240);
   stroke(100);
   strokeWeight(1); 
-  for(int i=0; i<4; i++){rect(btnW*i, 0, btnW, btnH);}
+  for(int i=0; i<4; i++){ rect(btnW*i, 0, btnW, btnH); }
   fill(0);      
-  for(int i=0; i<4; i++){text(txt[i], i*btnW+txtInitX, txtY);}
-  text("Fish Account : " + fishCounter, txtInitX, height-txtY);
+  for(int i=0; i<4; i++){ text(txt[i], i*btnW+txtInitX, txtY); }
+  text("Fish Amount : " + fishCounter, txtInitX, height-txtY);
 
    // move and display a fish
    if (fishImg != null){
@@ -82,18 +82,18 @@ void moveAndDisplay() {
 
 
 void mouseClicked() {
-  if(mouseY > 0 && mouseY < 50 && fishCounter<10){
-    if(mouseX > 0 && mouseX < btnW*1){
+  if(mouseY > 0 && mouseY < 50 && fishCounter<10) {
+    if(mouseX > 0 && mouseX < btnW*1) {
       // press random button
       // setup a fish
       setupFish();
-    } else if(mouseX > btnW*1 && mouseX < btnW*2){
+    } else if(mouseX > btnW*1 && mouseX < btnW*2) {
       // press small button
 
-    } else if(mouseX > btnW*2 && mouseX < btnW*3){
+    } else if(mouseX > btnW*2 && mouseX < btnW*3) {
       // press medium button
       
-    } else if(mouseX > btnW*3 && mouseX < btnW*4){
+    } else if(mouseX > btnW*3 && mouseX < btnW*4) {
       // press large button
       
     } 
